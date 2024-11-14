@@ -1,0 +1,159 @@
+body{
+    margin: 0 100px;
+
+    
+    }
+    
+    .drop{
+    
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px 0;
+  
+    }
+    
+    .drop .logo h1{
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+        
+    }
+    
+    .drop .logo b{
+    
+        color: #ff511c;
+    }
+    
+    .drop ul{
+        display: flex;
+        list-style: none;
+    
+    }
+    .drop ul li{
+        margin-right: 30px;
+    
+    }
+    
+    .drop ul li a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    }
+    input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    
+    }
+    
+    .signin{
+    background: #ff511c;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    
+    }
+
+/* homecook*/
+.homecook{
+    padding: 70px 0;
+}
+
+/* image of chef */
+.all{
+    display: flex;
+
+}
+
+
+    .container {
+        position: relative;
+        width: 50%;
+        padding-right: 50px;
+
+
+      }
+      
+      .image {
+        display: block;
+        width: 300px;
+        height: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color:#ff511c;
+        overflow: hidden;
+        width: 300px;
+        height:0;
+        transition: .5s ease;
+      }
+      
+      .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+      }
+      
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.Nissan{
+    display: block;
+
+}
+.nisat{
+    display: block;
+}
+.pranta{
+    display: block;
+}
+.durjoy{
+    display: block;
+} 
+.all{
+        display: flex;
+
+    }*/
+
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .dark{
+        position: absolute;
+      }
