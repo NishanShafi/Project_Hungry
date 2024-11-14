@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>HUNGRY.COM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="Home.png">
+<link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <div class="drop">
+        <div class="logo"><h1>Hun<b>Gry</b></h1></div>
+        <div class="topnav ">
+            <ul>
+                <li><a href="HOME.php">HOME</a></li>
+                <!-- <li><a href="#">Service</a></li> -->
+                <li><a href="homecooks.html">Home Cooks</a></li>
+                <!-- <li><a href="#">Menu</a></li> -->     
+                <li><a href="menu.php">Menu</a></li>
+                <li><a href="aboutus.html">Our Story</a></li>
+                <li><a href="developer.html">Developers</a></li>
+        
+            </ul>
+        </div>
+            
+            <div>
+                <?php 
+                $count=0;
+                if(isset($_SESSION['cart']))
+                {
+                    $count=count($_SESSION['cart']);
+                }
+                ?>
+                <a href="cart.php" class="btn ">My cart(<?php echo $count; ?>)</a>
+            </div>
+        </div>
+   <h1> Our Story</h1>
+    <div class="last"><p>WThe motive of our website is to easier the work of the home cook who run their business from
+        home and don't get enough recognition to customers. Through our website they can show their
+        work and customers won't have the doubt to not getting good food because of recommendation.
+        The motive of our website is to easier the work of the home cook who run their business from
+        home and don't get enough recognition to customers. Through our website they can show their
+        work and customers won't have the doubt to not getting good food because of recommendation.</p>
+
+<br>
+
+
+<h2> Give Your Contect Information For Further Use</h2>
+    <div class="aboutmap">
+        
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14759.438325068431!2d91.8100263!3d22.3589303!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8fe976105b47e2f0!2sPort%20City%20International%20University!5e0!3m2!1sen!2sbd!4v1675184181896!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="comment">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+</div>
+
+</body></html>

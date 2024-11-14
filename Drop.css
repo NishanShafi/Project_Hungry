@@ -1,0 +1,599 @@
+body{
+    background-color:antiquewhite;
+    
+    }
+    
+    .drop{
+    
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0; 
+    }
+    
+    .drop .logo h1{
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+        
+    }
+    
+    .drop .logo b{
+    
+        color: #ff511c;
+    }
+    
+    .drop ul{
+        display: flex;
+        list-style: none;
+    
+    }
+    .drop ul li{
+        margin-right: 30px;
+    
+    }
+    
+    .drop ul li a{
+    text-decoration: none;
+    color: brown;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    }
+
+/* Navigation bar */
+
+.topnav {
+
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(226, 40, 15);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #f9fcfb;
+    color: white;
+  }
+
+  /* Nav bar end */
+
+input{
+padding: 10px 20px;
+cursor: pointer;
+font-weight: 600;
+
+}
+
+.signin{
+background: #ff511c;
+color: white;
+outline: none;
+border: none;
+border-radius: 5px;
+
+}
+
+
+
+
+
+.content{
+
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content.contentleft{
+        display: block;
+        width: 100%;
+
+}
+.content.contentleft.info{
+
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.info h1{
+font-size: 50px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin-bottom: 30px;
+}
+ p{
+
+     font-size: 23px;
+     line-height: 2pc;
+     margin-bottom: 30px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.content.image{
+    display: block;
+    width: 100%;
+}
+.content.image img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0dge);
+    }
+    100%{
+        transform: rotate(360dge);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+button{
+    cursor: pointer;
+    background-color: orangered;
+    padding:15px;
+    font-size: 18px;
+    border:none;
+    color:white;
+    border-radius:5px;
+}
+
+button:hover{
+    color:orangered;
+    border:2px solid #666;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+:root{
+    --orange:#F79F1F;
+    --text-color-1:#444;
+    --text-color-2:#666;
+    --bg-color-1:#fff;
+    --bg-color-2:#eee;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+
+html{
+
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:.8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--orange);
+    border-radius: 5rem;
+}
+
+
+
+body.active{
+    --text-color-1:#fff;
+    --text-color-2:#eee;
+    --bg-color-1:#333;
+    --bg-color-2:#222;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.4);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color:var(--text-color-1);
+    font-size: 4rem;
+}
+
+.heading span{
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background: var(--orange);
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background:#ff511c;
+    border-radius: .5rem;
+    cursor: pointer;
+} 
+
+.btn:hover{
+    letter-spacing: .2rem;
+} 
+
+
+ 
+
+.form-container form{
+    background: var(--bg-color-1);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    align-items: center;
+}
+
+.form-container form .inputBox{
+    flex:1 1 23rem;
+}
+
+.form-container form .inputBox span{
+    font-size: 1.7rem;
+    color:var(--text-color-2);
+}
+
+.form-container form .inputBox input{
+    font-size: 1.5rem;
+    color:var(--text-color-1);
+    background:var(--bg-color-2);
+    border-radius: .5rem;
+    margin:.5rem 0;
+    text-transform: none;
+    width: 100%;
+    padding:1rem;
+}
+
+.form-container form .btn{
+    flex:1 1 23rem;
+}
+
+.packages .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.packages .box-container .box{
+    background:var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.packages .box-container .box .image{
+    height:25rem;
+    width: 100%;
+    padding:1.5rem;
+    position: relative;
+}
+
+.packages .box-container .box .image img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .image h3{
+    position: absolute;
+    top:2.5rem; left:2.5rem;
+    font-size: 2rem;
+    color:#fff;
+    background: rgba(0,0,0,.5);
+    border-radius: .5rem;
+    font-weight: lighter;
+    padding:.5rem 1.5rem;
+}
+
+.packages .box-container .box .image h3 i{
+    color:var(--orange);
+}
+
+.packages .box-container .box .content{
+    padding:1.5rem;
+    padding-top: 0;
+}
+
+.packages .box-container .box .content .price{
+    font-weight: 600;
+    color:var(--text-color-1);
+    font-size: 2.5rem;
+}
+
+.packages .box-container .box .content .price span{
+    font-weight: lighter;
+    color:var(--text-color-2);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.packages .box-container .box .content p{
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    color:var(--text-color-2);
+    line-height: 1.7;
+}
+ 
+.pricing .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.pricing .box-container .box{
+    background:var(--bg-color-1);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    text-align: center;
+}
+
+.pricing .box-container .box h3{
+    padding:1rem;
+    background: var(--bg-color-2);
+    border-radius: .5rem;
+    font-size: 2rem;
+    color:var(--text-color-1);
+}
+
+.pricing .box-container .box .price{
+    padding-top: 2rem;
+}
+
+.pricing .box-container .box .price span{
+    font-size: 2rem;
+    color:var(--text-color-2);
+}
+
+.pricing .box-container .box .price .amount{
+    font-size: 5rem;
+    color:var(--text-color-1);
+    font-weight: bolder;
+}
+
+.pricing .box-container .box ul{
+    padding: .5rem 0;
+    list-style: none;
+}
+
+.pricing .box-container .box ul li{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    color:var(--text-color-2);
+}
+
+
+
+.swiper-pagination-bullet-active{
+    background: var(--orange);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .header .navbar{
+        right: 2rem;
+    }
+
+    .header .login-form{
+        right: 2rem;
+    }
+
+    #search-btn{
+        display:inline-block;
+    }
+
+    .header .search-form{
+        position: absolute;
+        top:115%; right: 2rem;
+        background:var(--bg-color-1);
+        border-radius: .5rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+        transform:scale(0);
+        transform-origin: top right;
+    }
+
+    .header .search-form.active{
+        transform:scale(1);
+    }
+
+}
+
+
+ .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .cart {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .cart span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .cart span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .cart:hover span {
+    padding-right: 25px;
+  }
+  
+  .cart:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* <--> */
+
+  .container-grocery {
+    position: relative;
+    
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgb(61, 61, 61);
+    padding-left: 150px;
+    padding-right: 20px;
+  }
+.text-block h2{
+    font-size: 55px;
+}
+.text-block h4{
+    font-size: 25px;
+}
+.text-block p{
+    margin-top:20px;
+    font-size:15px;
+}
+.add .add-container .textimg{
+    margin-top: 150px;
+    text-transform: normal;
+    padding-left: 120px;
+    font-size:45px;
+    position: absolute;
+    color:rgb(78, 78, 78);
+    top: 8px; left: 16px;
+}
+
+.add .add-container .textbtn{
+    position: absolute;
+    top: 8px; left: 16px;
+    margin-top:200px;
+    margin-left: 400px;
+   
+    
+}
+.ordergrocery{
+    margin-top:20px;
+}
+.orderg{
+    background:orangered;
+    border:none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color:white;
+    margin-top: 80px;
+    padding:8px;
+}
